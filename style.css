@@ -1,7 +1,127 @@
-body.dark-mode {
-  background-color: #121212;
-  color: white;
+:root {
+  --primary-color: #4e73df;
+  --secondary-color: #858796;
+  --dark-color: #2c3e50;
+  --light-color: #f8f9fc;
+  --success-color: #1cc88a;
+  --info-color: #36b9cc;
+  --warning-color: #f6c23e;
+  --danger-color: #e74a3b;
 }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-color);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1a1a2e;
+  color: #e6e6e6;
+}
+
 body.dark-mode .card {
-  background-color: #1e1e1e;
+  background-color: #16213e;
+  border-color: #0f3460;
+}
+
+body.dark-mode .card-header {
+  background-color: #0f3460 !important;
+}
+
+body.dark-mode .list-group-item {
+  background-color: #16213e;
+  border-color: #0f3460;
+  color: #e6e6e6;
+}
+
+body.dark-mode .text-muted {
+  color: #b8b8b8 !important;
+}
+
+body.dark-mode footer {
+  background-color: #0f3460 !important;
+}
+
+/* Navbar */
+.navbar.bg-gradient {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #224abe 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('https://images.unsplash.com/photo-1505503693641-1926193e8d57?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-weight: 600;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Section Titles */
+.section-title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-bg h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-bg p {
+    font-size: 1rem;
+  }
 }
