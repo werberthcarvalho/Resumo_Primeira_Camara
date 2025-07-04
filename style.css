@@ -81,6 +81,23 @@ body.dark-mode .text-muted {
   color: #b8b8b8 !important;
 }
 
+body.dark-mode a {
+  color: #4dcaff;
+}
+
+body.dark-mode a:hover {
+  color: #90e0ef;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #0f1b2c;
+  color: #e6e6e6;
+  border: 1px solid #0f3460;
+}
+
+
 /* ========== ELEMENTOS COMUNS ========== */
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
@@ -91,6 +108,19 @@ body.dark-mode .text-muted {
   margin-top: -1rem; /* Compensa o navbar fixo */
   padding: 6rem 0;
 
+}
+.hero-bg {
+  background-repeat: no-repeat;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+a:focus,
+button:focus {
+  outline: 2px dashed var(--info-color);
+  outline-offset: 2px;
 }
 
 .card {
@@ -147,17 +177,20 @@ body.dark-mode .text-muted {
   src: url('fonts/Amontillados.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-    font-size: 6.5rem;
+ 
 }
 
 /* Aplicar a nova fonte somente ao título principal */
 .display-4 {
   font-family: 'Amontillados', serif;
   font-weight: normal !important;
-  font-size: 6.5rem;
+  font-size: 10.5rem;
    
 }
-.lead{
-  font-size: 10px;
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--secondary-color);
 }
+
 
