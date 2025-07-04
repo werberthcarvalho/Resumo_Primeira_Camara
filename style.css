@@ -147,6 +147,7 @@ body.dark-mode .text-muted {
   src: url('fonts/Amontillados.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+    font-size: 6.5rem;
 }
 
 /* Aplicar a nova fonte somente ao título principal */
