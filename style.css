@@ -90,6 +90,7 @@ body.dark-mode .text-muted {
   border-radius: 0;
   margin-top: -1rem; /* Compensa o navbar fixo */
   padding: 6rem 0;
+  line-height: 0.0;
 }
 
 .card {
@@ -138,4 +139,23 @@ body.dark-mode .text-muted {
   .hero-bg h1 {
     font-size: 2.2rem;
   }
+}
+
+
+@font-face {
+  font-family: 'Amontillados';
+  src: url('fonts/Amontillados.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Aplicar a nova fonte somente ao título principal */
+.display-4 {
+  font-family: 'Amontillados', serif;
+  font-weight: normal !important;
+  font-size: 5.5rem;
+   
+}
+#cursode{
+ padding-top: 18px;
 }
