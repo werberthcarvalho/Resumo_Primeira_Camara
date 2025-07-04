@@ -1,0 +1,7 @@
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+body.dark-mode .card {
+  background-color: #1e1e1e;
+}
