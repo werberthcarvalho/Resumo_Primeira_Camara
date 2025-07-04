@@ -2,7 +2,7 @@
   --primary-color: #4e73df;
   --secondary-color: #858796;
   --dark-color: #2c3e50;
-  --light-color: #f8f9fc;
+  --light-color: #6aa103;
   --success-color: #1cc88a;
   --info-color: #36b9cc;
   --warning-color: #f6c23e;
@@ -57,8 +57,8 @@ body.dark-mode footer {
 
 /* Hero Section */
 .hero-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-              url('https://images.unsplash.com/photo-1505503693641-1926193e8d57?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.514)), 
+              url('img/iStock-953909568.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 0 0 10px 10px;
@@ -124,4 +124,8 @@ footer {
   .hero-bg p {
     font-size: 1rem;
   }
+}
+#gnosis{
+  color: rgb(0, 58, 68);
+  font-size: large;
 }
